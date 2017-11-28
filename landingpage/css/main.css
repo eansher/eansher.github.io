@@ -93,12 +93,16 @@ button {
   background-color: #E8573E;
   border: none;
   border-radius: 200px;
-  height: 40px;
-  width: 120px;
-  font-size: 10pt;
+  height: 50px;
+  width: 150px;
+  font-size: 12pt;
   text-transform: lowercase;
   cursor: pointer;
   box-shadow: 4px 6px #F26E53;
+}
+
+.dllink{
+  margin-top: -.45%;
 }
 
 button:active {
@@ -113,17 +117,14 @@ button:focus {
 
 /* Contact Sidebar */
 
-.hide {
-  display: none;
-}
 
 #main {
-    transition: all 200ms ease-in-out;
+    transition: all 500ms ease-in-out;
     margin-left: 0%;
 }
 
 #sidebar {
-    transition: all 200ms ease-in-out;
+    transition: all 500ms ease-in-out;
     width: 0%;
 }
 
@@ -163,6 +164,10 @@ input:focus, textarea:focus {
 
 label {
   font-size: 10pt;
+}
+
+.no {
+  opacity: 0;
 }
 
 /* Sections! */
@@ -366,19 +371,15 @@ section {
 
 /* Download */
 .download {
-  background-color: #3AAED9;
+  background-color: #5286C5;;
   color: #FFFFFF;
+  padding: 5% 0%;
 }
 
-.blue {
-  background-color: #5286C5;
-  width: 100%;
-  height: 40%;
-}
+
 
 .download > h2 {
-  margin-top: -11%;
-  margin-bottom: 3%;
+  margin-top: -0%;
 }
 
 .yellow  {
@@ -405,15 +406,25 @@ section {
   margin-bottom: -2%;
 }
 
+.pad {
+  margin: 0 3%;
+}
+
+.blue {
+  background-color: #3AAED9;
+  width: 100%;
+  height: 375px;
+  margin-top: -365px;
+  z-index: 0;
+}
 
 /* Footer */
 footer {
   width: 100%;
-  padding: 3% 2%;
+  height: 20%;
+  margin-top: -6%;
   background-color: #5286C5;
-  display: none;
-}
+  z-index: 3;
 
-footer > input {
-  padding: 10px;
+}
 }

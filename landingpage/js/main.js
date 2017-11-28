@@ -32,12 +32,14 @@ $(window).scroll(function () {
      $(".open").click(function(){
          $("#sidebar").css("width", "33%");
          $('#main').css("margin-left", "33%");
-         $('.no').removeClass('hide');
+         $('.no').css('opacity',"1");
+         $('.no').css('transition', 'all 500ms ease-in-out 300ms');
      });
      $(".close").click(function(){
          $('#sidebar').css("width", "0");
          $("#main").css("margin-left", "0");
-         $('.no').addClass('hide')
+         $('.no').css('opacity', '0');
+         $('.no').css('transition', 'all 200ms ease-in-out');
      });
 
  });
