@@ -11,6 +11,7 @@ body {
   width: 100vw;
   background-color: #FFFFFF;
   text-transform: lowercase;
+  position: relative
 }
 
 h1, h2 {
@@ -256,7 +257,7 @@ section {
 }
 
 .pulser:hover {
-  animation: PULSE .5s infinite;
+  animation: PULSE .6s infinite;
 }
 
 @keyframes PULSE {
@@ -365,12 +366,22 @@ section {
 
 /* Download */
 .download {
-  background-color: #5286C5;
+  background-color: #3AAED9;
   color: #FFFFFF;
-  padding: 4% 10% 0% 10%;
 }
 
-.download > span {
+.blue {
+  background-color: #5286C5;
+  width: 100%;
+  height: 40%;
+}
+
+.download > h2 {
+  margin-top: -11%;
+  margin-bottom: 3%;
+}
+
+.yellow  {
   color: #FFCE55;
 }
 
@@ -378,14 +389,20 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 5;
+  padding: 0 15%;
 }
 
-.blue {
-  background-color: #3AAED9;
-  height: 130px;
-  width: 100vw;
+.butt {
+  height: 75px;
+  width: 200px;
+  font-size: 15pt;
+}
 
-
+.apple, .droid {
+  width: 13%;
+  margin-left: 3%;
+  margin-bottom: -2%;
 }
 
 
