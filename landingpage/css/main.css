@@ -19,7 +19,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 30pt;
+  font-size: 35pt;
 }
 
 h2 {
@@ -29,7 +29,7 @@ h2 {
 
 p {
   line-height: 2;
-  font-size: 14pt;
+  font-size: 13pt;
 }
 
 a {
@@ -202,6 +202,11 @@ section {
   padding: 4%;
 }
 
+.title {
+  font-family: 'cutive';
+  text-transform: lowercase;
+}
+
 .info > p {
   text-align: justify;
   text-transform: none;
@@ -293,6 +298,64 @@ section {
   top: 40%;
 }
 
+/* City Names */
+
+.name {
+  position: absolute;
+  opacity: 0;
+}
+
+.name > h2 {
+  font-size: 12pt;
+  margin-bottom: 0;
+}
+
+.name > p {
+  font-size: 12pt;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.newyork {
+  top: 40.7%;
+  left: 19.5%;
+  transition: all 500ms ease-in-out;
+}
+
+.nyc:hover~.newyork{
+  opacity: 1;
+}
+
+.france {
+  top: 31.5%;
+  left: 45.5%;
+  transition: all 500ms ease-in-out;
+}
+
+.paris:hover~.france{
+  opacity: 1;
+}
+
+.hongkong {
+  top: 47.5%;
+  right: 17%;
+  transition: all 500ms ease-in-out;
+}
+
+.hk:hover~.hongkong{
+  opacity: 1;
+}
+
+.brazil {
+  bottom: 11.5%;
+  left: 29%;
+  transition: all 500ms ease-in-out;
+}
+
+.rio:hover~.brazil{
+  opacity: 1;
+}
+
 /* message */
 .message {
   background-color: #5BC1A6;
@@ -307,7 +370,7 @@ section {
   padding: 4% 10% 0% 10%;
 }
 
-span {
+.download > span {
   color: #FFCE55;
 }
 
