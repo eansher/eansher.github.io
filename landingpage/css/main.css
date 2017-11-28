@@ -1,0 +1,339 @@
+/* site update */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  width: 100vw;
+  background-color: #FFFFFF;
+  text-transform: lowercase;
+}
+
+h1, h2 {
+  font-family: 'Cutive', cursive;
+  letter-spacing: 1.2pt;
+}
+
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+  font-size: 20pt;
+  margin-bottom: 5%;
+}
+
+p {
+  line-height: 2;
+  font-size: 14pt;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #FFCE55;
+}
+
+/* STICKY NAV */
+header {
+  background-color: #5286C5;
+  color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  z-index: 10;
+  box-shadow: 0px 2px 5px #2A476A;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.75% -10%;
+}
+
+ul {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
+li {
+  display: inline-block;
+  padding: 0 2%;
+}
+
+.babylogo {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+header > h2 {
+  position: absolute;
+  top: 0;
+  left: 43.5%;
+}
+
+header > h2:hover{
+    color: #FFCE55;
+}
+
+button {
+  font-family: 'Cutive', serif;
+  color: white;
+  background-color: #E8573E;
+  border: none;
+  border-radius: 200px;
+  height: 40px;
+  width: 120px;
+  font-size: 10pt;
+  text-transform: lowercase;
+  cursor: pointer;
+  box-shadow: 4px 6px #F26E53;
+}
+
+button:active {
+  box-shadow: 0 0;
+  transform: translateY(4px);
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+/* Contact Sidebar */
+
+.hide {
+  display: none;
+}
+
+#main {
+    transition: all 200ms ease-in-out;
+    margin-left: 0%;
+}
+
+#sidebar {
+    transition: all 200ms ease-in-out;
+    width: 0%;
+}
+
+.contact {
+  color: #FFFFFF;
+  background-color: rgba(0, 175, 220, 1);
+  position: fixed;
+  top:90px;
+  bottom: 0;
+  z-index: 6;
+}
+
+.close h3 {
+  text-align: right;
+  padding: 5% 12%;
+}
+
+form>input, textarea {
+  display: block;
+  margin: 2% auto;
+  width: 75%;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #5286C5;
+  font-size: 14pt;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+input:focus, textarea:focus {
+  outline: 0;
+}
+
+
+#sidebar button {
+  margin: 5% auto;
+}
+
+label {
+  font-size: 10pt;
+}
+
+/* Sections! */
+
+section {
+  width: 100%;
+}
+
+/* hero */
+.hero > img {
+  width: 100vw;
+}
+
+.tag {
+  margin-top: -1.5%;
+  margin-bottom: 4%;
+}
+
+/* App section */
+.app {
+  background-color: #3AAED9;
+  color: #FFFFFF;
+  padding: 4% 10%;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.phone, .info {
+  width: 40%;
+}
+
+.info {
+  background-color: #51b4d8;
+  align-self: center;
+  padding: 4%;
+}
+
+.info > p {
+  text-align: justify;
+  text-transform: none;
+}
+
+/* ABOUT SECTION */
+.about {
+  background-color: #5286C5;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 6% 14%;
+  flex-wrap: wrap;
+}
+
+.aboutitem {
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid white;
+  max-width: 29%;
+}
+
+.aboutitem > img {
+  max-width: 100%;
+}
+
+/* cities section */
+.cities {
+  padding: 4% 10%;
+}
+
+.map {
+  position: relative;
+}
+
+.map > img {
+  max-width: 100%;
+}
+
+.pulser {
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  background-color: rgba(255, 205, 84, .2);
+  transition: transform 2s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.pulser:hover {
+  animation: PULSE .5s infinite;
+}
+
+@keyframes PULSE {
+  0% {
+    opacity: 0;
+    transform: scale(1,1);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1.5,1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2,2);
+  }
+}
+
+.nyc {
+  position: absolute;
+  top: 33%;
+  left: 24%;
+}
+
+.paris {
+  position: absolute;
+  top: 24%;
+  left: 47%;
+}
+
+.rio {
+  position: absolute;
+  top: 66%;
+  left: 33.6%;
+}
+
+.hk {
+  position: absolute;
+  right: 20.5%;
+  top: 40%;
+}
+
+/* message */
+.message {
+  background-color: #5BC1A6;
+  color: #FFFFFF;
+  padding: 4% 10%;
+}
+
+/* Download */
+.download {
+  background-color: #5286C5;
+  color: #FFFFFF;
+  padding: 4% 10% 0% 10%;
+}
+
+span {
+  color: #FFCE55;
+}
+
+.thirds {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.blue {
+  background-color: #3AAED9;
+  height: 130px;
+  width: 100vw;
+
+
+}
+
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 3% 2%;
+  background-color: #5286C5;
+  display: none;
+}
+
+footer > input {
+  padding: 10px;
+}
