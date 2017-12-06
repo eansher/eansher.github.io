@@ -72,6 +72,11 @@ li {
   padding: 0 2%;
 }
 
+li:hover {
+  color: #FFCE55;
+  cursor: pointer;
+}
+
 .babylogo {
   opacity: 0;
   transition: opacity 300ms ease-in-out;
