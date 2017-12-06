@@ -145,6 +145,7 @@ button:focus {
 .close h3 {
   text-align: right;
   padding: 5% 12%;
+  cursor: pointer;
 }
 
 form>input, textarea {
