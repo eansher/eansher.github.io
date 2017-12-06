@@ -148,6 +148,10 @@ button:focus {
   cursor: pointer;
 }
 
+.close h3:hover {
+  color: #FFCE55;
+}
+
 form>input, textarea {
   display: block;
   margin: 2% auto;
